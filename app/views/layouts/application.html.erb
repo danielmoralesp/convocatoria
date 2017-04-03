@@ -5,10 +5,26 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+  <%= stylesheet_link_tag    "bootstrap.min" %>
+  <%= stylesheet_link_tag    "style" %>
+  <%= stylesheet_link_tag    "animate" %>
+  <%= stylesheet_link_tag    "linear-icons" %>
+
 </head>
 <body>
 
 <%= yield %>
+
+  <%= javascript_include_tag "jquery.min" %>
+  <%= javascript_include_tag "bootstrap.min" %>
+  <%= javascript_include_tag "jquery.easing.min" %>
+  <%= javascript_include_tag "scrolling-nav-sticky" %>
+  <%= javascript_include_tag "hide-nav" %>
 
 </body>
 </html>
